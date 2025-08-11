@@ -1,0 +1,102 @@
+// mixin
+// escala variable que recibe el tamaño a la que se desea emplear la mediaQuerys
+
+@mixin MediaQ ($escala){
+    //mediaQuerys
+    @media screen and (min-width: $escala){
+        @content; // conten es para luego al llamar el mixin escribir sus respectivo estilos
+    }
+}
+
+// llamando al mixin
+
+$iPhone: 320px;
+$sPhone: 360px;
+$iPad: 760px;
+$mLaptop: 1260px;
+$hLaptop: 1420px;
+
+//funcion
+@function int($val, $res){
+    @return $val - $res;
+}
+
+@function double($val, $partes){
+    @return &val / $partes;
+}
+
+$anchoBase: 95%;
+
+body{
+    @include MediaQ($sPhone){
+        
+        padding-top: 35%;
+    };
+
+    @include MediaQ($iPad){    
+        
+        padding-top: 25%
+    };
+
+    @include MediaQ($mLaptop){    
+        
+        padding-top: 15%
+    };
+}
+
+
+
+.menu{
+    @include MediaQ($sPhone){
+     
+        font-size: 3em;
+    };
+
+    @include MediaQ($iPad){    
+        
+        font-size: 5em;
+        height: 10%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    };
+}
+
+
+
+.contenido{
+
+    @include MediaQ($iPhone){
+        width: 95%;
+        margin: auto;
+
+        li{
+            background-color: rgb(51, 51, 51);
+            color: white;
+        }
+    };
+
+    @include MediaQ($sPhone){
+        width: int($anchoBase, 5); //llamando funcion
+
+        li{
+            background-color: rgb(83, 80, 80);
+            color: rgb(0, 189, 247);
+        }
+    };
+
+    @include MediaQ($iPad){
+     
+        width: int($anchoBase, 15); //llamando funcion
+
+        ul{
+            grid-template-columns: repeat(4, 25%);
+        }
+
+        li{
+            background-color: rgb(83, 80, 80);
+            color: rgb(0, 189, 247);
+            font-size: 2.5em;
+            line-height: 2em; 
+        }
+    };
+}

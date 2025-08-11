@@ -1,0 +1,302 @@
+/* Created by Apple 🍏🇺🇿 */
+
+body {
+        background-color: black;
+        transform: scale(0.5);
+    }
+    div {
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform-origin: 50% 50%;
+    }
+    .circle {animation: animationFrames linear 8s infinite;}
+        
+
+@keyframes animationFrames{
+  0% {
+    transform:  translate(0px,0px)  ; background-color: transparent;
+  }
+  10% {
+    transform:  translate(0px,150px)  ; background-color: transparent;
+  }
+  20% {
+    transform:  translate(191px,455px)  ; background-color: yellow;
+  }
+  30% {
+    transform:  translate(-226px,248px)  ; background-color: blue;
+  }
+  40% {
+    transform:  translate(210px,250px)  ; background-color: red;
+  }
+  50% {
+    transform:  translate(-237px,448px)  ; background-color: skyblue;
+  }
+  60% {
+    transform:  translate(2px,152px)  ; background-color: transparent;
+  }
+  68% {
+    transform:  translate(0px,0px)  ; background-color: transparent;
+  }
+  75% {
+    transform:  translate(250px,0px)  ; background-color: green;
+  }
+  81% {
+    transform:  translate(250px,500px)  ; background-color: yellow;
+  }
+  88% {
+    transform:  translate(-280px,500px)  ; background-color: red;
+  }
+  95% {
+    transform:  translate(-280px,0px)  ; background-color: blue;
+  }
+  100% {
+    transform:  translate(0px,0px)  ; background-color: transparent;
+  }
+}
+
+.circle1 {
+        animation: animationFrames linear 8s .1s infinite;
+    }
+    .circle2 {
+        animation: animationFrames linear 8s .2s infinite;
+    }
+    .circle3 {
+        animation: animationFrames linear 8s .3s infinite;
+    }
+    .circle4 {
+        animation: animationFrames linear 8s .4s infinite;
+    }
+    .circle5 {
+        animation: animationFrames linear 8s .5s infinite;
+    }
+    .circle6 {
+        animation: animationFrames linear 8s .6s infinite;
+    }
+    .circle7 {
+        animation: animationFrames linear 8s .7s infinite;
+    }
+    .circle8 {
+        animation: animationFrames linear 8s .8s infinite;
+    }
+    .circle9 {
+        animation: animationFrames linear 8s .9s infinite;
+    }
+    .circle10 {
+        animation: animationFrames linear 8s 1s infinite;
+    }
+    .circle11 {
+        animation: animationFrames linear 8s 1.1s infinite;
+    }
+    .circle12 {
+        animation: animationFrames linear 8s 1.2s infinite;
+    }
+    .circle13 {
+        animation: animationFrames linear 8s 1.3s infinite;
+    }
+    .circle14 {
+        animation: animationFrames linear 8s 1.4s infinite;
+    }
+    .circle15 {
+        animation: animationFrames linear 8s 1.5s infinite;
+    }
+    .circle16 {
+        animation: animationFrames linear 8s 1.6s infinite;
+    }
+    .circle17 {
+        animation: animationFrames linear 8s 1.7s infinite;
+    }
+    .circle18 {
+        animation: animationFrames linear 8s 1.8s infinite;
+    }
+    .circle19 {
+        animation: animationFrames linear 8s 1.9s infinite;
+    }
+    .circle20 {
+        animation: animationFrames linear 8s 2s infinite;
+    }
+    .circle21 {
+        animation: animationFrames linear 8s 2.1s infinite;
+    }
+    .circle22 {
+        animation: animationFrames linear 8s 2.2s infinite;
+    }
+    .circle23 {
+        animation: animationFrames linear 8s 2.3s infinite;
+    }
+    .circle24 {
+        animation: animationFrames linear 8s 2.4s infinite;
+    }
+    .circle25 {
+        animation: animationFrames linear 8s 2.5s infinite;
+    }
+    .circle26 {
+        animation: animationFrames linear 8s 2.6s infinite;
+    }
+    .circle27 {
+        animation: animationFrames linear 8s 2.7s infinite;
+    }
+    .circle28 {
+        animation: animationFrames linear 8s 2.8s infinite;
+    }
+    .circle29 {
+        animation: animationFrames linear 8s 2.9s infinite;
+    }
+    .circle30 {
+        animation: animationFrames linear 8s 3s infinite;
+    }
+    .circle31 {
+        animation: animationFrames linear 8s 3.1s infinite;
+    }
+    .circle32 {
+        animation: animationFrames linear 8s 3.2s infinite;
+    }
+    .circle33 {
+        animation: animationFrames linear 8s 3.3s infinite;
+    }
+    .circle34 {
+        animation: animationFrames linear 8s 3.4s infinite;
+    }
+    .circle35 {
+        animation: animationFrames linear 8s 3.5s infinite;
+    }
+    .circle36 {
+        animation: animationFrames linear 8s 3.6s infinite;
+    }
+    .circle37 {
+        animation: animationFrames linear 8s 3.7s infinite;
+    }
+    .circle38 {
+        animation: animationFrames linear 8s 3.8s infinite;
+    }
+    .circle39 {
+        animation: animationFrames linear 8s 3.9s infinite;
+    }
+    .circle40 {
+        animation: animationFrames linear 8s 4s infinite;
+    }
+
+    .circle41 {
+        animation: animationFrames linear 8s 4.1s infinite;
+    }
+    .circle42 {
+        animation: animationFrames linear 8s 4.2s infinite;
+    }
+    .circle43 {
+        animation: animationFrames linear 8s 4.3s infinite;
+    }
+    .circle44 {
+        animation: animationFrames linear 8s 4.4s infinite;
+    }
+    .circle45 {
+        animation: animationFrames linear 8s 4.5s infinite;
+    }
+    .circle46 {
+        animation: animationFrames linear 8s 4.6s infinite;
+    }
+    .circle47 {
+        animation: animationFrames linear 8s 4.7s infinite;
+    }
+    .circle48 {
+        animation: animationFrames linear 8s 4.8s infinite;
+    }
+    .circle49 {
+        animation: animationFrames linear 8s 4.9s infinite;
+    }
+    .circle50 {
+        animation: animationFrames linear 8s 5s infinite;
+    }
+    .circle51 {
+        animation: animationFrames linear 8s 5.1s infinite;
+    }
+    .circle52 {
+        animation: animationFrames linear 8s 5.2s infinite;
+    }
+    .circle53 {
+        animation: animationFrames linear 8s 5.3s infinite;
+    }
+    .circle54 {
+        animation: animationFrames linear 8s 5.4s infinite;
+    }
+    .circle55 {
+        animation: animationFrames linear 8s 5.5s infinite;
+    }
+    .circle56 {
+        animation: animationFrames linear 8s 5.6s infinite;
+    }
+    .circle57 {
+        animation: animationFrames linear 8s 5.7s infinite;
+    }
+    .circle58 {
+        animation: animationFrames linear 8s 5.8s infinite;
+    }
+    .circle59 {
+        animation: animationFrames linear 8s 5.9s infinite;
+    }
+    .circle60 {
+        animation: animationFrames linear 8s 6s infinite;
+    }
+    .circle61 {
+        animation: animationFrames linear 8s 6.1s infinite; 
+    }
+    .circle62 {
+        animation: animationFrames linear 8s 6.2s infinite;
+    }
+    .circle63 {
+        animation: animationFrames linear 8s 6.3s infinite;
+    }
+    .circle64 {
+        animation: animationFrames linear 8s 6.4s infinite;
+    }
+    .circle65 {
+        animation: animationFrames linear 8s 6.5s infinite;
+    }
+    .circle66 {
+        animation: animationFrames linear 8s 6.6s;
+    }
+    .circle67 {
+        animation: animationFrames linear 8s 6.7s;
+    }
+    .circle68 {
+        animation: animationFrames linear 8s 6.8s;
+    }
+    .circle69 {
+        animation: animationFrames linear 8s 6.9s;
+    }
+    .circle70 {
+        animation: animationFrames linear 8s 7s;
+    }
+    .circle71 {
+        animation: animationFrames linear 8s 7.1s;
+    }
+    .circle72 {
+        animation: animationFrames linear 8s 7.2s;
+    }
+    .circle73 {
+        animation: animationFrames linear 8s 7.3s;
+    }
+    .circle74 {
+        animation: animationFrames linear 8s 7.4s;
+    }
+    .circle75 {
+        animation: animationFrames linear 8s 7.5s;
+    }
+    .circle76 {
+        animation: animationFrames linear 8s 7.6s;
+    }
+    .circle77 {
+        animation: animationFrames linear 8s 7.7s;
+    }
+    .circle78 {
+        animation: animationFrames linear 8s 7.8s;
+    }
+    .circle79 {
+        animation: animationFrames linear 8s 7.9s;
+    }
+    .circle80 {
+        animation: animationFrames linear 8s 8s;
+    }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://file.myfontastic.com/xsJA3EUzViPcb5LbyudamB/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <title>Generador de contraseñas</title>
+</head>
+
+<body>
+    <!-- 
+        NAME ICONOS: 
+        * copiar: (copy)
+        * (-): (minus)
+        * (+): (plus)
+        * ganchito: (check)
+        * (X): (times)
+        * candado: (lock)
+     -->
+
+    <div class="container">
+        <div class="logo">
+            <p class="logotipo">GenPass</p>
+        </div>
+
+        <form action="" class="app" id="app">
+
+            <div class="fila numero-caracteres">
+                <!-- texto -->
+                <div class="col">
+                    <label for="numero-caracteres">Numero de caracteres:</label>
+                </div>
+                <!-- botones -->
+                <div class="col botones">
+                    <div>
+                        <button class="btn icon-minus" id="minus"></button>
+                    </div>
+
+                    <div>
+                        <input type="text" id="numero-caracteres" readonly value="12">
+                    </div>
+
+                    <div>
+                        <button class="btn icon-plus" id="plus"></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="fila simbolos">
+                <div class="col">
+                    <label for="simbolos">¿Incluir Simbolos?</label>
+                </div>
+                <div class="col">
+                    <button class="btn icon-check" id="btn-simbolos"></button>
+                </div>
+            </div>
+
+
+            <div class="fila numeros">
+                <div class="col">
+                    <label for="numeros">¿Incluir Numeros?</label>
+                </div>
+                <div class="col">
+                    <button class="btn icon-check" id="btn-numeros"></button>
+                </div>
+            </div>
+
+
+            <div class="fila mayusculas">
+                <div class="col">
+                    <label for="mayusculas">¿Incluir Mayusculas?</label>
+                </div>
+                <div class="col">
+                    <button class="btn icon-check" id="btn-mayusculas"></button>
+                </div>
+            </div>
+
+
+            <div class="fila generar">
+                <div class="col">
+                    <button class="btn btn-generar" id="btn-generar">Generar <i class="icon-lock"></i></button>
+                </div>
+
+                <div class="col">
+                    <input type="text" class="input-password" id="input-password" readonly>
+                </div>
+            </div>
+
+            <div class="fila alerta">
+                <div class="col">
+                    <div class="alerta-copiado" id="alerta-copiado">
+                        <p class="icon-copy">Texto Copiado</p>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

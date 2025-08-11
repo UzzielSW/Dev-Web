@@ -1,0 +1,115 @@
+/*
+    sintaxis SCSS(identica a css normal)
+
+body{
+    color: blue;
+}
+
+======================================================================
+    sintaxis SASS(sin {} y sin ;)(usar tabulacion para diferencial bloques)
+(igual que python)
+
+body
+    color: blue
+*/
+* {
+  padding: 0;
+  margin: 0; }
+
+.menu {
+  padding-top: .5em;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+  height: 25%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0074D9;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  z-index: 0; }
+
+body {
+  padding-top: 30%; }
+
+.contenido {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.397);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.342);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.342);
+  z-index: 10;
+  display: block; }
+  .contenido ul {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+  .contenido li {
+    border-radius: 5px;
+    font-size: 2em;
+    line-height: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: .5em .5em; }
+    .contenido li:hover {
+      color: black;
+      background-color: #DDD;
+      -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.342);
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.342); }
+
+@media screen and (min-width: 360px) {
+  body {
+    padding-top: 35%; } }
+
+@media screen and (min-width: 760px) {
+  body {
+    padding-top: 25%; } }
+
+@media screen and (min-width: 1260px) {
+  body {
+    padding-top: 15%; } }
+
+@media screen and (min-width: 360px) {
+  .menu {
+    font-size: 3em; } }
+
+@media screen and (min-width: 760px) {
+  .menu {
+    font-size: 5em;
+    height: 10%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; } }
+
+@media screen and (min-width: 320px) {
+  .contenido {
+    width: 95%;
+    margin: auto; }
+    .contenido li {
+      background-color: #333333;
+      color: white; } }
+
+@media screen and (min-width: 360px) {
+  .contenido {
+    width: 90%; }
+    .contenido li {
+      background-color: #535050;
+      color: #00bdf7; } }
+
+@media screen and (min-width: 760px) {
+  .contenido {
+    width: 80%; }
+    .contenido ul {
+      grid-template-columns: repeat(4, 25%); }
+    .contenido li {
+      background-color: #535050;
+      color: #00bdf7;
+      font-size: 2.5em;
+      line-height: 2em; } }

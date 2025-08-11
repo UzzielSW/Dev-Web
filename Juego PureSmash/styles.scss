@@ -1,0 +1,172 @@
+// Paleta de colores
+
+$colorBlack: black;
+$colorGray: rgb(110, 106, 106);
+$colorWhite: white;
+$colorGreen: rgb(3, 124, 3);
+$colorYellow: rgb(255, 153, 0);
+$colorRed: rgb(216, 3, 3);
+$colorViolet: rgb(196, 13, 196);
+$colorBlue: rgb(0, 0, 143);
+$colorPink: rgb(228, 0, 152);
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: Handlee, "Monotype Corsiva", Rosemary, "Microsoft Himalaya", "Lucida Calligraphy";
+    background-color: rgb(228, 227, 227);
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before{
+    position: relative;
+    top: .2em;
+    margin-right: .3em;
+}
+
+//colores de letras
+.pink{
+    color: $colorPink;
+    text-shadow: 1px 1px 1px white;
+}
+.green{
+    color: $colorGreen;
+    text-shadow: 1px 1px 1px white;
+}
+.yellow{
+    color: $colorYellow;
+    text-shadow: 1px 1px 1px white;
+}
+.red{
+    color: $colorRed;
+    text-shadow: 1px 1px 1px white;
+}
+.violet{
+    color: $colorViolet;
+    text-shadow: 1px 1px 1px white;
+}
+
+li{
+    cursor: pointer;
+}
+
+.title{
+    background-color: $colorGray;
+    color: $colorBlue;
+    display: block;
+    font-size: 3em;
+    outline: 1px solid black;
+    text-align: center;
+    
+}
+
+.esconder{
+    display: none;
+}
+
+.containerMenu{
+    background-color: $colorWhite;
+    border: 1px solid $colorViolet;
+    border-radius: 5px;
+    display: block;
+    line-height: 42px;
+    margin: 5em auto;
+    // outline: 1px solid $colorBlack;
+    padding: 25px 10px;
+    width: 15em;
+    
+    & li{
+        border-radius: 10px;
+        box-shadow: 4px -1px $colorViolet inset;
+        font-weight: bold;
+        font-size: 1.2em;
+        list-style: none;
+        margin: 1em 0;
+        // outline: 1px solid $colorWhite;
+        text-align: center;
+        width: 100%;
+
+        &:hover{
+            box-shadow: 14em 0 $colorViolet inset;
+            color: $colorWhite;
+            //comando para transicion (-trs)
+            -webkit-transition: all .8s;
+            -moz-transition: all .8s;
+            -ms-transition: all .8s;
+            -o-transition: all .8s;
+            transition: all .8s;
+        }
+    }
+}
+
+
+.containerPlay{
+    background-color: $colorBlack;
+    // box-shadow: 2px 2px 3px chocolate;
+    display: block;
+    border-radius: 5px;
+    height: 25em;
+    // line-height: 42px;
+    margin: 5em auto;
+    // padding: 25px 10px;
+    padding-top: 1em;
+    // position: relative;
+    width: 40%;
+}
+
+.game{
+    background-color: $colorWhite;
+    grid-gap: 20px;
+    height: 50%;
+    margin: auto;
+    outline: 1px solid $colorGreen;
+    position: relative;
+    width: 80%;
+}
+
+.boxcirculo{
+    display: grid;
+    grid-template-columns: repeat(3, .9em);
+    grid-template-rows: repeat(3, .9em);
+    grid-gap: 30px;
+    // outline: 1px solid $colorYellow;
+    position: absolute;
+    left: 38%;
+    top: 1em;
+}
+
+.circle{
+    // outline: 1px solid $colorBlack;
+    // color: #790ddd;
+    border: 1px solid $colorBlack;
+    border-radius: 50%;
+    height: .9em;
+    width: .9em;
+    cursor: pointer;
+    z-index: 20;
+}
+
+
+
+.boxcuadro{
+    display: grid;
+    grid-template-columns: repeat(2, 1.5em);
+    grid-template-rows: repeat(2, 1.5em);
+    grid-gap: 23px;
+    // outline: 1px solid $colorViolet;
+    position: absolute;
+    left: 42%;
+    top: 2em;
+}
+
+
+.cuadro{
+    border: 1px solid $colorViolet;
+    height: 1.5em;
+    width: 1.5em;
+    z-index: 10;;
+}

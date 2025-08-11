@@ -1,0 +1,18 @@
+// Se requiere instalacion si desea compilar el sass en terminal
+// recomendable usar prepros hace las compilaciones por usted
+
+/*
+    sintaxis SCSS(identica a css normal)
+
+body{
+    color: blue;
+}
+
+*/
+
+// syntax highlighting for ... plugins para verificar codigos
+
+//importando componentes
+@import "componentes/1Variables";
+@import "componentes/2AnidacionSelectores";
+@import "componentes/3MediaQuerys";

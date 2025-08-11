@@ -1,0 +1,245 @@
+//paleta de colores
+$purple: #212139;
+$purpleLight: #684bff;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Handlee, sans-serif, "Monotype Corsiva", Rosemary, "Microsoft Himalaya", "Lucida Calligraphy";
+    font-size: 20px;
+}
+
+*::selection{
+    background-color: #33257e;
+    color: white;
+}
+
+body{
+    background-color: $purple;
+    color:white;
+}
+
+.logotipo{
+    font-family: 'Comfortaa', cursive;
+    font-size: 5em;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px -1px 1px .8px white;
+}
+
+.container{
+    margin: 40px auto;
+    max-width: 500px;
+    width: 90%;
+}
+
+.logo{
+    margin-bottom: 40px;
+    width: 100%
+}
+
+//ajuste de los iconos
+[class^="icon-"]:before,
+[class*=" icon-"]:before{
+    position: relative;
+    top: .2em;
+    margin-right: .2em;
+} 
+
+// filas y columnas
+
+.fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.col{
+    width: 50%;
+}
+
+// inputs y botones (estilos generales)
+.app{
+    label{
+        line-height: 40px;
+    }
+    
+    input{
+        border: none;
+        text-align: center;
+    }
+    
+    .btn{
+        background-color: $purpleLight;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        height: 40px;
+        text-align: center;
+        transition: all .3s ease;
+        vertical-align: top;
+        width: 100%;
+        
+        &:hover{
+            background-color: #9681fd;
+        }
+
+        &.false{
+            background-color: #33257e;
+            &:hover{
+                background-color: #9681fd;
+            }
+        }
+
+        //estilos iconos
+        &.icon-check{
+            color: rgb(11, 245, 11);
+            font-size: 23px;
+        }
+
+        &.icon-times{
+            color: rgb(218, 2, 2);
+            font-size: 23px;
+        }
+        
+        &.icon-minus, &.icon-plus{
+            font-size: 23px;
+        }
+    }
+} 
+
+
+// fila: numero de caracteres
+
+.app{
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .botones div{
+        width: 100%;
+
+        &:nth-child(1) button{
+            border-radius: 4px 0 0 4px;
+        }
+
+        &:nth-child(2) input{
+            background-color: #33257e;
+            color: white;
+            cursor: default;
+            height: 40px;
+            width: 100%;
+        }
+
+        &:nth-child(3) button{
+            border-radius: 0 4PX 4PX 0;
+        }
+    }
+
+    // fila generar contraseña
+    .fila.generar{
+        margin-bottom: 10px;
+
+        .col:nth-child(1){
+            width: 30%;
+        }
+
+        .col:nth-child(2){
+            width: 65%;
+        }
+
+        .btn-generar{
+            font-size: 18px;
+            height: 40px;
+            line-height: 40px;
+            padding: 0;
+            position: relative;
+            width: 100%;
+
+            &::after{
+                background-color: $purpleLight;
+                content: "";
+                display: inline-block;
+                height: 14px;
+                position: absolute;
+                right: -7px;
+                top: 13px;
+                transform: rotate(45deg);
+                transition: all .3s ease;
+                width: 14px;
+            }
+
+            // icono
+            .icon-lock{
+                margin-left: 20px;
+                font-size: 18px;
+                color: rgb(19, 212, 1);
+            }
+        }
+
+        //triangulo
+        .col:nth-child(1):hover .btn-generar::after{
+            background-color: #9681fd;
+        }
+
+        // input
+
+        .input-password{
+            background:none;
+            border: 1px solid rgba(255, 255, 255, 0.253);
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 23px;
+            height: 40px;
+            line-height: 40px;
+            transition: all .3s ease;
+            width: 100%;
+
+            &:hover{
+                border: 1px solid rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        & input::selection{
+            background-color: $purple;
+        }
+    }
+
+
+    //fila alerta
+
+    .fila.alerta{
+        justify-content: flex-end;
+
+        .col{
+            width: 65%;
+
+            .alerta-copiado{
+                color: rgba(255, 255, 255, 0);
+                font-size: 10px;
+                text-align: center;
+                transition: all .3s ease;
+                // outline: 1px solid white;
+
+                p{
+                    font-size: 15px;
+                }
+
+                &.active{
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+}
+    
+
+@import "Responsive";

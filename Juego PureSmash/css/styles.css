@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body {
+  font-family: Handlee, "Monotype Corsiva", Rosemary, "Microsoft Himalaya", "Lucida Calligraphy";
+  background-color: #e4e3e3; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  position: relative;
+  top: .2em;
+  margin-right: .3em; }
+
+.pink {
+  color: #e40098;
+  text-shadow: 1px 1px 1px white; }
+
+.green {
+  color: #037c03;
+  text-shadow: 1px 1px 1px white; }
+
+.yellow {
+  color: #ff9900;
+  text-shadow: 1px 1px 1px white; }
+
+.red {
+  color: #d80303;
+  text-shadow: 1px 1px 1px white; }
+
+.violet {
+  color: #c40dc4;
+  text-shadow: 1px 1px 1px white; }
+
+li {
+  cursor: pointer; }
+
+.title {
+  background-color: #6e6a6a;
+  color: #00008f;
+  display: block;
+  font-size: 3em;
+  outline: 1px solid black;
+  text-align: center; }
+
+.esconder {
+  display: none; }
+
+.containerMenu {
+  background-color: white;
+  border: 1px solid #c40dc4;
+  border-radius: 5px;
+  display: block;
+  line-height: 42px;
+  margin: 5em auto;
+  padding: 25px 10px;
+  width: 15em; }
+  .containerMenu li {
+    border-radius: 10px;
+    -webkit-box-shadow: 4px -1px #c40dc4 inset;
+    box-shadow: 4px -1px #c40dc4 inset;
+    font-weight: bold;
+    font-size: 1.2em;
+    list-style: none;
+    margin: 1em 0;
+    text-align: center;
+    width: 100%; }
+    .containerMenu li:hover {
+      -webkit-box-shadow: 14em 0 #c40dc4 inset;
+      box-shadow: 14em 0 #c40dc4 inset;
+      color: white;
+      -webkit-transition: all .8s;
+      -moz-transition: all .8s;
+      -ms-transition: all .8s;
+      -o-transition: all .8s;
+      transition: all .8s; }
+
+.containerPlay {
+  background-color: black;
+  display: block;
+  border-radius: 5px;
+  height: 25em;
+  margin: 5em auto;
+  padding-top: 1em;
+  width: 40%; }
+
+.game {
+  background-color: white;
+  grid-gap: 20px;
+  height: 50%;
+  margin: auto;
+  outline: 1px solid #037c03;
+  position: relative;
+  width: 80%; }
+
+.boxcirculo {
+  display: grid;
+  grid-template-columns: repeat(3, 0.9em);
+  grid-template-rows: repeat(3, 0.9em);
+  grid-gap: 30px;
+  position: absolute;
+  left: 38%;
+  top: 1em; }
+
+.circle {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: .9em;
+  width: .9em;
+  cursor: pointer;
+  z-index: 20; }
+
+.boxcuadro {
+  display: grid;
+  grid-template-columns: repeat(2, 1.5em);
+  grid-template-rows: repeat(2, 1.5em);
+  grid-gap: 23px;
+  position: absolute;
+  left: 42%;
+  top: 2em; }
+
+.cuadro {
+  border: 1px solid #c40dc4;
+  height: 1.5em;
+  width: 1.5em;
+  z-index: 10; }

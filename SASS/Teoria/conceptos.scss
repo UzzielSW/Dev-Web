@@ -1,0 +1,68 @@
+// VARIABLES
+$variable: 12px;
+
+// OPERACIONES MATEMATICAS
+// las operaciones con valores fijos en sass deben ir dentro de parentesis
+$wid: (100px / 5); //ejemplo de operacion con valor fijo
+$hei: ($wid * 63)/100;
+
+// INTERPOLACION: es cuando usamos variables para construie selectores o propiedades.
+// se hace usando: #{$varieble}
+
+// CICLOS
+.caja{
+	@for $i from 2 through 4{
+		//hacemos referencia al padre con &   en este caso es "caja"
+		.&:nth-child(#{$i})
+		{
+			background-position: -($wid * ($i-1));
+		}
+	}	
+}
+
+// MEDIA QUERYS
+div{
+	width: 100%;
+
+	@media screen and (min-width: 1025px){
+		width: 75%;
+	}
+}
+
+
+// MAPS
+$sizes:(
+	movil: 480px,
+	tablet: 768px,
+	web: 1025px,
+	hd: 1400px	
+);
+
+// CICLO EACH que recibe tanto la clave y el valor del map
+//al igual que en programacion el ciclo each se us apara recorrer conjunto de elementos
+@each $tipo, $screen-size in $sizes{
+	@media all in (min-width:#{$screen-size}){
+		@for $i from 1 through 20{
+			.#{$tipo}-#{$i*5}{
+				width: $i*5%;
+			}
+		}
+	}
+}
+
+// MIXIN: son pedasos de codigo reutilizables(cono funciones)
+
+// definicion de mixin
+@mixin bordes($bw, $bc, %br){
+	border: $bw solid $bc;
+	border-radius: $br;
+}
+
+// implementacion de mixin
+div{
+	@include bordes(2px, green, 5px);
+}
+
+
+// existen funciones en sass que nos permiten ajustar los colores como filtros
+// ejemplo: darken, lighten, saturate, desaturate, rgba

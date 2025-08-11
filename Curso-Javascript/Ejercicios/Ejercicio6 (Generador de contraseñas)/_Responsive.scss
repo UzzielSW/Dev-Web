@@ -1,0 +1,50 @@
+// media queries
+
+@media screen and (max-width: 500px){
+
+    .logotipo{
+        width: 90%;
+        // height: 50%;
+        font-size: 3em;
+        margin: auto;
+    }
+
+    .app .fila{
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        .col{
+            margin: auto;
+            margin-bottom: 10px;
+            width: 85%;
+        }
+
+        &.generar{
+            border-top: 1px solid rgba(255, 255, 255, 0.493);
+            padding-top: 30px;
+
+            .col:nth-child(1){
+                
+                width: 60%;
+
+                .icon-lock{
+                    margin-left: 5px;
+                    font-size: 16px;
+                    color: rgb(19, 212, 1);
+                }
+
+                .btn-generar:after{
+                    top: auto;
+                    left: 50%;
+                    bottom: -7px;
+                }
+
+            }
+            .col:nth-child(2){
+                width: 85%;
+                padding-top: 10px;
+                // outline: 1px solid white;
+            }
+        }
+    }
+}
