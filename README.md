@@ -25,7 +25,6 @@
 ## Librerias
 
 ```js
-console.log()
 ```
 
 ## Correcciones
@@ -33,3 +32,6 @@ console.log()
 
 ## Pendientes
 
+## Herramientas para practicar
+- Quokka.js: para probar código en tiempo real (un solo archivo)
+- Console Ninja: para debuggear código en tiempo real (varios archivos) proyectos grandes
