@@ -8,6 +8,23 @@ Los eventos en JavaScript permiten ejecutar código cuando ocurren acciones espe
 - Carga de páginas
 - Cambios en elementos
 
+
+
+## Evento de mouse
+
+- click
+- dblclick (doble click)
+- mouseenter (entra al area)
+- mouseleave (sale del area)
+- contextmenu (capturar click derecho)
+- mousedown (presionas click)
+- mouseup (dejas de presionar click
+- mousemove (te mueves dentro de un elemento)
+
+```
+
+```
+
 ## Eventos de Carga de Página
 
 ### Evento `onload`
@@ -48,8 +65,8 @@ elemento.addEventListener("event", nameFunction, useCapture);
 1. **event**: Tipo de evento ('click', 'mousedown', etc.)
 2. **nameFunction**: Función a ejecutar cuando ocurra el evento
 3. **useCapture**: Valor booleano que especifica el tipo de propagación
-   - Por defecto es `false`
-   - Opcional
+  - Por defecto es `false`
+  - Opcional
 
 ### Tipos de Propagación de Eventos
 
@@ -93,18 +110,15 @@ window.onload = () => {
 ## Buenas Prácticas
 
 1. **Gestión de Eventos**
-
-   - Usar `addEventListener` en lugar de atributos HTML inline
-   - Limpiar eventos cuando ya no sean necesarios
-   - Evitar múltiples registros del mismo evento
-
+  - Usar `addEventListener` en lugar de atributos HTML inline
+  - Limpiar eventos cuando ya no sean necesarios
+  - Evitar múltiples registros del mismo evento
 2. **Rendimiento**
-
-   - Delegar eventos cuando sea posible
-   - Usar `useCapture` solo cuando sea necesario
-   - Remover event listeners para evitar memory leaks
-
+  - Delegar eventos cuando sea posible
+  - Usar `useCapture` solo cuando sea necesario
+  - Remover event listeners para evitar memory leaks
 3. **Compatibilidad**
-   - Considerar la compatibilidad con navegadores antiguos
-   - Usar polyfills cuando sea necesario
-   - Verificar la existencia de elementos antes de agregar eventos
+  - Considerar la compatibilidad con navegadores antiguos
+  - Usar polyfills cuando sea necesario
+  - Verificar la existencia de elementos antes de agregar eventos
+

@@ -121,6 +121,9 @@ parent.insertBefore(newElement, element); // Inserta antes de otro elemento
 
 ```javascript
 parent.replaceChild(newNode, oldNode);
+
+//hacerlo desde el mismo elemento
+child.replaceWith(newChild) // reemplazar un hijo con un nuevo hijo
 ```
 
 ### Eliminación de Elementos
@@ -156,23 +159,41 @@ var div = document.getElementById("demo");
 div.appendChild(p);
 ```
 
+## Metodos equivalentes
+
+```javascript
+// hermano anterior
+parent.insertAdjacentElement('beforebegin', element);
+parent.before(element)
+
+// hermano siguiente
+parent.insertAdjacentElement('afterend', element);
+parent.after(element)
+
+// primer hijo
+parent.insertAdjacentElement('afterbegin', element);
+parent.prepend(element)
+
+// ultimo hijo
+parent.insertAdjacentElement('beforeend', element);
+parent.append(element)
+
+```
+
 ## Buenas Prácticas
 
 1. **Selección de Elementos**
-
-   - Usa IDs para elementos únicos
-   - Usa clases para grupos de elementos
-   - Prefiere `querySelector` para selectores CSS complejos
-
+  - Usa IDs para elementos únicos
+  - Usa clases para grupos de elementos
+  - Prefiere `querySelector` para selectores CSS complejos
 2. **Manipulación del DOM**
-
-   - Minimiza las operaciones directas al DOM
-   - Agrupa las modificaciones cuando sea posible
-   - Usa fragmentos para múltiples inserciones
-
+  - Minimiza las operaciones directas al DOM
+  - Agrupa las modificaciones cuando sea posible
+  - Usa fragmentos para múltiples inserciones
 3. **Rendimiento**
-   - Almacena referencias a elementos frecuentemente usados
-   - Evita selecciones repetidas del mismo elemento
-   - Usa `classList` en lugar de manipular `className` directamente
+  - Almacena referencias a elementos frecuentemente usados
+  - Evita selecciones repetidas del mismo elemento
+  - Usa `classList` en lugar de manipular `className` directamente
 
 > **Nota**: El DOM es una representación en memoria del documento HTML. Las modificaciones al DOM son inmediatas pero no afectan al archivo HTML original.
+
